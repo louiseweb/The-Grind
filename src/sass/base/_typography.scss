@@ -1,0 +1,57 @@
+@use '../utilities' as *;
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+    line-height: 1.2;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: rem(50);
+
+    @include breakpoint(tablet) {
+        font-size: rem(60);
+    }
+
+    @include breakpoint(desktop) {
+        font-size: rem(70);
+    }
+}
+
+h2 {
+    font-weight: 300;
+    font-size: rem(40);
+
+    @include breakpoint(tablet) {
+        font-size: rem(45);
+    }
+
+    @include breakpoint(desktop) {
+        font-size: rem(50);
+    }
+}
+
+h3 {
+    font-weight: 900;
+    font-size: rem(26);
+}
+
+h4 {
+    font-weight: 900;
+    font-size: rem(22);
+}
+
+a,
+a:visited,
+a:active {
+    font-size: rem(16);
+    text-transform: uppercase;
+    letter-spacing: rem(1);
+    margin: 0;
+    padding: 0;
+
+}
+
+a:hover {
+    color: var(--salmon);
+}
