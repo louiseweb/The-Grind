@@ -4,8 +4,8 @@
 
 body {
     background-color: var(--white);
-    font-size: rem(16);
     font-family: 'Poppins', sans-serif;
+    font-size: rem(16);
     line-height: 1.6;
 }
 
@@ -16,6 +16,16 @@ a:active {
 }
 
 img {
+    display: block;
     max-width: 100%;
     height: auto;
+    
+}
+
+li {
+    list-style: none;
+}
+
+.d-none {
+    display: none;
 }

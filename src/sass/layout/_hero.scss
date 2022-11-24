@@ -1,0 +1,26 @@
+@use '../utilities' as *;
+
+.hero {
+    height: 100vh;
+    background-color: var(--grey-black);
+    
+    &__img {
+        width: 100%;
+        margin-top: rem(-65);   
+    }
+
+    &__heading {
+        color: var(--white);
+    }
+
+    &__img {
+        height: 50%;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50%;
+    }
+}

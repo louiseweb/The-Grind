@@ -1,3 +1,26 @@
+@use '../utilities' as *;
 
+// Hamburger Btn
+.hamburger {
+    position: relative;
+    z-index: 2;
+    padding: 0;
 
+    @include breakpoint(desktop) {
+        display: none;
+    }
 
+    &__box {
+        padding: 0;
+        width: rem(30);
+    }
+
+    &__inner,
+    &__inner::before,
+    &__inner::after {
+        width: rem(30);
+        height: rem(2);
+        padding: 0;
+        background-color: var(--white);  
+    }
+}

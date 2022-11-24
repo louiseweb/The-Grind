@@ -1,10 +1,50 @@
-.header {
-    height: rem(100);
-    border-bottom: rem(1) var(--white) solid;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
+@use '../utilities' as *;
+
+.header {  
+    position: relative;
+
+    @include breakpoint(tablet) {
+		background-color: var(--grey-black);
+	}
+
+    @include breakpoint(desktop) {
+		border-bottom: rem(.5) solid var(--white);
+	}
+     
+    &__content {
+        position: relative;     
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: rem(65);
+    }
+
+    &__logo {
+        position: relative;
+        z-index: 2;
+        height: rem(30);  
+    }
+
+    &__menu-icon {
+        position: relative;
+        z-index: 2;
+        height: rem(20);
+        
+    }
+
+    &__underline {
+        position: absolute;
+        z-index: 2;
+        top: rem(65);
+        left: rem(0);
+        width: 100%;
+        border: rem(.5) solid var(--white);
+
+        @include breakpoint(desktop) {
+            display: none;
+        }
+        
+    }
 }
 
 

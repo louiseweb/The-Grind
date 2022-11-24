@@ -1,9 +1,13 @@
 @use '../utilities' as *;
 
 .container {
-	padding: 0 rem(40);
 	max-width: rem(1280);
 	margin: 0 auto;
+	padding: 0 rem(25);
+
+	@include breakpoint(tablet) {
+		padding: 0 rem(40);
+	}
 
 	@include breakpoint(desktop) {
 		padding: 0;

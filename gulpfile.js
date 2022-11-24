@@ -25,13 +25,13 @@ function scripts() {
 }
 
 // Images
-const imgMinify = require('gulp-imagemin');
+// const imgMinify = require('gulp-imagemin');
 
-function images() {
-    return src('./src/img/*')
-      .pipe(imgMinify())
-      .pipe(dest('./dist/img'));
-}
+// function images() {
+//     return src('./src/img/*')
+//       .pipe(imgMinify())
+//       .pipe(dest('./dist/img'));
+// }
 
 // Browsersync
 const browsersync = require('browser-sync').create();
@@ -57,10 +57,12 @@ function watchTask() {
             [
             './src/sass/**/*.scss',
             './src/js/**/*.js',
-            './src/img/*'
+            // './src/img/*'
             ],
-            series(styles, scripts, images, browsersyncReload)
+            series(styles, scripts, browsersyncReload)
+            // Add images
         );
 }
 
-exports.default = series(styles, scripts, images, browsersyncServe, watchTask);
+exports.default = series(styles, scripts, browsersyncServe, watchTask);
+// Add images
