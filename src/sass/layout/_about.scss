@@ -1,0 +1,22 @@
+@use '../utilities' as *;
+
+.about {
+    position: relative;
+    
+    &__text {
+        margin-top: rem(75);
+    }
+
+    &__img {
+        margin-top: rem(75);
+        width: 100%;
+    }
+
+    &__timeline {
+        // position: absolute;
+        width: 100%;
+        margin-top: rem(-100);
+        margin-bottom: rem(75);
+        padding: 0 rem(25);
+    }
+}

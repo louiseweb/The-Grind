@@ -2,13 +2,11 @@
 
 .header {  
     position: relative;
-
-    @include breakpoint(tablet) {
-		background-color: var(--grey-black);
-	}
+    height: rem(65);
 
     @include breakpoint(desktop) {
 		border-bottom: rem(.5) solid var(--white);
+        z-index: 3;
 	}
      
     &__content {
@@ -21,20 +19,24 @@
 
     &__logo {
         position: relative;
-        z-index: 2;
+        z-index: 3;
         height: rem(30);  
     }
 
-    &__menu-icon {
-        position: relative;
-        z-index: 2;
-        height: rem(20);
+    // &__menu-icon {
+    //     position: relative;
+    //     z-index: 4;
+    //     height: rem(20);
         
+    // }
+
+    .hamburger {
+        z-index: 4;
     }
 
     &__underline {
         position: absolute;
-        z-index: 2;
+        z-index: 3;
         top: rem(65);
         left: rem(0);
         width: 100%;

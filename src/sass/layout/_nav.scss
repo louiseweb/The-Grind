@@ -3,7 +3,7 @@
 
 .nav {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     right: 0;
     display: flex;
@@ -21,12 +21,13 @@
 
     @include breakpoint(desktop) {
 		position: unset;
-        z-index: 1;
+        z-index: 3;
         top: unset;
         right: unset;
-        display: flex;
+        display: flex !important;
         width: unset;
         height: 100%;
+        background-color: unset;
 	}
 
     &__items {
@@ -49,8 +50,15 @@
             align-items: center;
             height: rem(65);
             margin-bottom: 0;
+    
         }
         
+    }
+
+    &__link a:hover {
+        @include breakpoint(desktop) {
+            color: var(--white);
+        }
     }
 
     &__link:not(:last-child) {
@@ -65,9 +73,9 @@
         @include breakpoint(desktop) {   
             content: '';
             position: absolute;
-            top: rem(63);
+            top: rem(62);
             left: 0;
-            height: rem(5);
+            height: rem(6);
             width: 0%;
             background-color: var(--salmon);
             transition: var(--transition-01);            
@@ -78,7 +86,6 @@
 
         @include breakpoint(desktop) {
             width: 100%;
-            opacity: 0.8;
         }
         
     }
@@ -87,8 +94,8 @@
         position: absolute;
         bottom: rem(30);
         display: flex;
-        justify-content: space-between;
-        width: 100%;  
+        justify-content: space-around;
+        width: 100%; 
         padding: 0 rem(75);
 
         @include breakpoint(desktop) {
