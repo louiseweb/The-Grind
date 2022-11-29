@@ -2,6 +2,7 @@
 
 .hero {
     background-color: var(--grey-black);
+   
 
     @include breakpoint(tablet) {
         display: flex;
@@ -78,7 +79,7 @@
             right: 0;
             display: block;
             margin-top: rem(-100);
-    
+            z-index: 99;
         }
   
     }

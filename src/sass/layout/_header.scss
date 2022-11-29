@@ -1,8 +1,11 @@
 @use '../utilities' as *;
 
 .header {  
-    position: relative;
+    position: fixed;
+    top: 0;
     height: rem(65);
+    width: 100%;
+    z-index: 99;
 
     @include breakpoint(desktop) {
 		border-bottom: rem(.5) solid var(--white);

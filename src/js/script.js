@@ -10,3 +10,17 @@ hamburger.addEventListener('click', function(){
         nav.classList.remove('d-none');
     }   
 });
+
+
+var scrollTrigger = 60;
+
+// Header color change on scroll
+window.onscroll = function() {
+    // We add pageYOffset for compatibility with IE.
+    if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+      document.querySelector(".header").style.backgroundColor = "#292929";
+    } else {
+        document.querySelector(".header").style.backgroundColor = "unset";
+    }
+  };
+
