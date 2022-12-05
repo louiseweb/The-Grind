@@ -1,0 +1,27 @@
+@use '../utilities' as *;
+
+.gallery {
+    
+
+
+    &__info {
+        background-image: url('../../dist/img/image-3-coffees-bw-mobile.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        // background-color: var(--white);
+    }
+
+    // &__text {
+    //     padding: rem(100) rem(50);
+    //     background-color: var(--salmon);
+    // }
+
+    // &__header {
+    //     color: var(--white);
+    //     margin-bottom: rem(15);
+    // }
+
+    // &__cta {
+    //     color: var(--white);
+    // }
+}

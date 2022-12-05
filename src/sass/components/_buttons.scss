@@ -24,3 +24,26 @@
         background-color: var(--white);  
     }
 }
+
+.btn {
+    padding: rem(10) rem(20);
+    font-size: 16;
+    font-weight: 700;
+    letter-spacing: rem(3);
+    text-transform: uppercase;
+    color: var(--black);
+    background-color: var(--white);
+    border: var(--black) rem(1) solid;
+    border-radius: rem(50);
+    cursor: pointer;
+    transition: var(--transition-01);
+
+    @include breakpoint(tablet) {
+        padding: rem(10) rem(40);
+    }
+}
+
+.btn:hover {
+    color: var(--white);
+    background-color: var(--black);
+}

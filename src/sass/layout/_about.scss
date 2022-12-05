@@ -108,26 +108,30 @@
         @include breakpoint(tablet) {
             display: unset;
             width: 50%;
-            max-height: unset;
             object-fit: cover;
         }
 
         @include breakpoint(desktop) {
             width: 30%;
+            height: rem(500);
+
         }
     }
 
     &__text {
-        padding-top: var(--padding-mobile);
-        padding-bottom: var(--padding-mobile);
+        padding: var(--padding-mobile) rem(25);
         background-color: var(--grey-black);
 
         @include breakpoint(tablet) {
             width: 50%;
+            padding: var(--padding-tablet) rem(40);
         }
 
         @include breakpoint(desktop) {
+            display: flex;
+            align-items: center;
             width: 70%;
+            padding: 0;
         }
     }
 
@@ -138,6 +142,31 @@
     &__body {
         margin-bottom: rem(30);
         color: var(--white);
+    }
+
+    &__col-1 {
+        @include breakpoint(desktop) {
+            width: 60%;
+            margin-left: rem(80);
+        }   
+        
+    }
+
+    &__col-2 {
+        display: none;
+        
+        @include breakpoint(desktop) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 30%;
+            margin-left: rem(40);
+        }
+
+    }
+
+    &__illustration {
+        max-height: rem(370);
     }
 
 }

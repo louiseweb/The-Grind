@@ -26,6 +26,7 @@ h1 {
 h2 {
     font-weight: 300;
     font-size: rem(30);
+    line-height: 1.6;
     margin-bottom: rem(10);
 
     @include breakpoint(tablet) {
@@ -39,12 +40,27 @@ h2 {
 
 h3 {
     font-weight: 900;
-    font-size: rem(26);
+    font-size: rem(20);
+    margin-bottom: rem(10);
+
+    @include breakpoint(tablet) {
+        font-size: rem(22);
+    }
+
+    @include breakpoint(desktop) {
+        font-size: rem(26);
+    }
 }
 
 h4 {
     font-weight: 900;
     font-size: rem(22);
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: rem(20);
 }
 
 a,
