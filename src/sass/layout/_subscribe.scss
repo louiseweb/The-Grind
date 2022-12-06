@@ -1,0 +1,66 @@
+@use '../utilities' as *;
+
+.subscribe {
+
+    @include breakpoint(tablet) {
+        display: flex;
+    }
+
+    &__img-mobile {
+        @include breakpoint(tablet) {
+            display: none;
+        }
+
+    }
+
+    &__img-desktop {
+        display: none;
+
+        @include breakpoint(tablet) {
+            display: unset;
+            width: 50%;
+            object-fit: cover;
+        }
+
+        @include breakpoint(desktop) {
+            width: 30%;
+        }
+    }
+
+    &__text {
+        padding: var(--padding-mobile) 0;
+        background-color: var(--light-grey);  
+
+        @include breakpoint(tablet) {
+            width: 50%;
+        }
+
+        @include breakpoint(desktop) {
+            width: 70%;
+        }
+    }
+
+    &__body {
+        margin-bottom: rem(20);
+        max-width: rem(650);
+    }
+
+    &__input {
+        width: 100%;
+        max-width: rem(600);
+        border: unset;
+        padding: rem(15);
+        margin-bottom: rem(25);
+    }
+
+    &__btn {
+        padding: rem(15) rem(30);
+        color: var(--white);
+        background-color: var(--salmon);
+        border: unset;
+
+        @include breakpoint(desktop) {
+            margin-left: rem(-30);
+        }
+    }
+}

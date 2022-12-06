@@ -299,21 +299,129 @@
         <!-- Gallery Section -->
         <section class="gallery">
             <div class="gallery__info">
-                <h1 class="gallery__header">We’re open every day.</h1>
-                <h5 class="gallery__subheader">Opening Times</h5>
-                <p class="gallery__days">Mon - Fri</p>
-                <p class="gallery__times">7am - 9pm</p>
+                <div class="gallery__info-inner container">
+                    <h2 class="gallery__header">We’re open every day.</h2>
+                    <h3 class="gallery__subheader">Opening Times</h3>
+                    <p class="gallery__days">Mon - Fri</p>
+                    <h2 class="gallery__times">7am - 9pm</h2>
+                    <hr>
+                    <p class="gallery__days">Sat</p>
+                    <h2 class="gallery__times">8am - 10pm</h2>
+                    <hr>
+                    <p class="gallery__days">Sun</p>
+                    <h2 class="gallery__times">10am - 6pm</h2>
+                    <hr>
+                </div>    
             </div>
-            <img src="../../dist/img/image-friends-mobile.jpg" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img class="gallery__img-1" src="../../dist/img/image-friends-mobile.jpg" alt="">
+            <img class="gallery__img-2" src="../../dist/img/image-open.jpg" alt="">
+            <img class="gallery__img-3" src="../../dist/img/image-coffee-pour.jpg" alt="">
             <div class="gallery__text">
-                <h2 class="gallery__header">Did you know you can now book a booth?</h2>
+                <h2 class="gallery__question">Did you know you can now book a booth?</h2>
                 <a class="gallery__cta" href="#">Learn More</a>
             </div>
         </section>
 
+        <!-- Testimonal Section -->
+        <section class="testimonial">
+            <div class="testinonial__content container">
+                <h2 class="testimonial__header">What our customers say</h2>
+                <div class="testimonial__grid">
+
+                     <!-- Item 1 -->
+                    <article class="testimonial__item">
+                        <img class="testimonial__img" src="../../dist/img/image-headshot-selma.jpg" alt="Selma headshot">    
+                        <div class="testimonial__text">
+                            <p class="testimonial__body">“I have been working from home since the pandemic. I love coming to The Grind to work, it’s a change of scenery and I love the coffee and the staff.”</p>
+                            <h5 class="testimonial__footnote">- Selma Day, Archway</h5>
+                        </div>
+                    </article>
+
+                    <!-- Item 2 -->
+                    <article class="testimonial__item">
+                        <img class="testimonial__img" src="../../dist/img/image-headshot-jake.jpg" alt="Jake headshot">    
+                        <div class="testimonial__text">
+                            <p class="testimonial__body">“They do have a variety of food and drinks you can select from. I honestly love the great interior all over the place.”</p>
+                            <h5 class="testimonial__footnote">- Jake Miller, Muswell Hill</h5>
+                        </div>
+                    </article>
+
+                    <!-- Item 3 -->
+                    <article class="testimonial__item">
+                        <img class="testimonial__img" src="../../dist/img/image-headshot-bobby.jpg" alt="Bobby headshot">    
+                        <div class="testimonial__text">
+                            <p class="testimonial__body">“Amazing coffee and the owner is just wonderful. He clearly knows his stuff and they roast their own beans. The Irish coffee will never disappoint!”</p>
+                            <h5 class="testimonial__footnote">- Bobby Greene, Golders Green</h5>
+                        </div>
+                    </article>
+
+                    <!-- Item 4 -->
+                    <article class="testimonial__item">
+                        <img class="testimonial__img" src="../../dist/img/image-headshot-jade.jpg" alt="Jade headshot">    
+                        <div class="testimonial__text">
+                            <p class="testimonial__body">“Great place. Amazing cafe. Extremely nice people. Highly recommend!!!”</p>
+                            <h5 class="testimonial__footnote">- Jade Martin, Mill Hill</h5>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscribe Section -->
+        <section class="subscribe">
+            <img class="subscribe__img-mobile" src="dist/img/image-3-coffees-mobile.jpg" alt="3 coffees">
+            <img class="subscribe__img-desktop" src="dist/img/image-3-coffees-desktop.jpg" alt="3 coffees">
+            <div class="subscribe__text">
+                <div class="subscribe__content container">
+                    <h2 class="subscribe__header">Subscribe to our newsletter</h2>
+                    <h5 class="subscribe__body">Sign-up to save 10% off your first purchase and receive updates about The Grind products, news, and offers.</h5>
+                    <form>
+                        <input class="subscribe__input" type="email" name="email" id="" placeholder="Email address...">
+                        <button class="subscribe__btn btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer__content container">
+            <img class="footer__logo" src="../../dist/img/logo-the-grind.png" alt="The Grind logo">
+            <div class="footer__grid">
+                <div class="footer__item">
+                    <h3 class="footer__header">About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Our Coffee</a></li>
+                        <li><a href="#">Our Ethics</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h3 class="footer__header">Services</h3>
+                    <ul>
+                        <li><a href="#">Bookings</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Frachise</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h3 class="footer__header">Contact Us</h3>
+                    <ul>
+                        <li><p class="footer__contact">A  The Grind, 6 Britannia Street, London N12 1LT</p></li>
+                        <li><p class="footer__contact">P  (0208) 652-9813</p></li>
+                        <li><p class="footer__contact">E  info@thegrind.co.uk</p></li>
+                    </ul>
+                </div>
+            </div>      
+        </div>
+        <div class="footer__copyright">
+            <div class="footer__copyright-content container">
+                <small>© 2022 The Grind  |  Image by macro vector on Freepik.</small>
+            </div>     
+        </div>
+    </footer>
 
     <script src="dist/js/script.js"></script>
 </body>

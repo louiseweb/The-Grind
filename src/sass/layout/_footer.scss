@@ -1,6 +1,58 @@
+@use '../utilities' as *;
 
+.footer {
+    padding-top: var(--padding-mobile);
+    background-color: var(--black);
 
+    &__logo {
+        width: rem(160);
+        margin-bottom: rem(40);
+    }
 
+    &__grid {
+        display: grid;
+        @include breakpoint(tablet) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            justify-content: space-between;
+            gap: 0 15%;
+        }
+    }
+
+    &__item {
+        padding-bottom: rem(40);
+        margin-bottom: rem(40);
+        border-bottom: var(--white) rem(.5) solid;
+
+        @include breakpoint(tablet) {
+            padding-bottom: unset;
+            border-bottom: unset;
+        }
+    }
+
+    &__item:not(:last-child) {
+        @include breakpoint(tablet) {
+            border-right: var(--white) rem(.5) solid;
+        }
+    }
+
+    &__header {
+        color: var(--white);
+    }
+
+    &__contact {
+        color: var(--white);
+    }
+
+    &__copyright {
+        margin-top: var(--padding-mobile);
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+        text-align: center;
+        background-color: var(--grey-black);
+        color: var(--white);
+    }
+}
 
 
 

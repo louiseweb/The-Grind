@@ -34,6 +34,11 @@ button {
     border: unset;
 }
 
+hr {
+    border-top: var(--mid-grey) rem(.5) solid;
+    margin-bottom: rem(30);
+}
+
 .d-none {
     display: none !important;
 }

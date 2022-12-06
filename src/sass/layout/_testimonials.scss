@@ -1,0 +1,77 @@
+@use '../utilities' as *;
+
+.testimonial {
+    padding: var(--padding-mobile) 0;
+
+    &__header {
+        margin-bottom: rem(50);
+        @include breakpoint(tablet) {
+            text-align: center;
+        }
+    }
+
+    &__grid {
+        position: relative;
+        display: grid;
+        grid-gap: rem(50) 0;
+
+        @include breakpoint(tablet) {
+            grid-template-columns: 1fr 1fr;
+            grid-row: 1fr 1fr;
+            grid-gap: 0 rem(50);
+        }
+
+        @include breakpoint(desktop) {
+            grid-gap: 0 rem(100);
+        }
+    }
+
+    &__grid::after {
+
+        @include breakpoint(tablet) {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: rem(1);
+            background-color: var(--mid-grey);
+        }
+        
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__item:not(:last-child) {
+        border-bottom: var(--mid-grey) rem(.5) solid;
+
+        @include breakpoint(tablet) {
+            border-bottom: unset;
+        }
+    }
+
+    &__img {
+        width: rem(92);
+        margin-right: rem(30);
+    }
+
+    &__text {
+        margin-bottom: rem(40);
+        
+    }
+
+    &__body {
+        margin-bottom: rem(15);
+        font-family: 'Merriweather', serif;
+        font-size: rem(18);
+        line-height: 1.8;
+    }
+
+    &__footnote {
+        font-size: rem(14);
+        font-weight: 700;
+    }
+}
