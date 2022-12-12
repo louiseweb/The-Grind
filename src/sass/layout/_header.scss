@@ -22,16 +22,13 @@
 
     &__logo {
         position: relative;
-        z-index: 3;
+        z-index: 4;
         height: rem(30);  
     }
 
-    // &__menu-icon {
-    //     position: relative;
-    //     z-index: 4;
-    //     height: rem(20);
-        
-    // }
+    &__logo:hover {
+        opacity: .8;
+    }
 
     .hamburger {
         z-index: 4;
@@ -39,12 +36,12 @@
 
     &__underline {
         position: absolute;
-        z-index: 3;
+        z-index: 4;
         top: rem(65);
         left: rem(0);
         width: 100%;
         border: rem(.5) solid var(--white);
-
+        
         @include breakpoint(desktop) {
             display: none;
         }

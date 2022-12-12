@@ -12,7 +12,7 @@ h1, h2, h3, h4 {
 h1 {
     font-weight: 300;
     font-size: rem(40);
-    margin-bottom: rem(30);
+    margin-bottom: rem(18);
     
     @include breakpoint(tablet) {
         font-size: rem(55);
@@ -27,7 +27,7 @@ h2 {
     font-weight: 300;
     font-size: rem(30);
     line-height: 1.6;
-    margin-bottom: rem(10);
+    margin-bottom: rem(5);
 
     @include breakpoint(tablet) {
         font-size: rem(40);
@@ -40,7 +40,7 @@ h2 {
 
 h3 {
     font-weight: 900;
-    font-size: rem(20);
+    font-size: rem(18);
     margin-bottom: rem(10);
 
     @include breakpoint(tablet) {
@@ -54,7 +54,7 @@ h3 {
 
 h4 {
     font-weight: 900;
-    font-size: rem(22);
+    font-size: rem(20);
 
     @include breakpoint(tablet) {
         font-size: rem(24);
@@ -68,7 +68,7 @@ h4 {
 h5 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: rem(20);
+    font-size: rem(18);
 }
 
 a,

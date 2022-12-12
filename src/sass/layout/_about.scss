@@ -3,6 +3,7 @@
 .about {
     position: relative;
     z-index: 1;
+    scroll-margin-top: 65px;
 
     @include breakpoint(tablet) {
         display: flex;
@@ -57,7 +58,7 @@
         width: 100%;
         max-width: 100%;
         margin-top: rem(-100);
-        margin-bottom: rem(75);
+        margin-bottom: var(--padding-mobile);
 
         @include breakpoint(tablet) {
             display: none;

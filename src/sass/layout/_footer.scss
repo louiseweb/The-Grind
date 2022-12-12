@@ -3,6 +3,7 @@
 .footer {
     padding-top: var(--padding-mobile);
     background-color: var(--black);
+    scroll-margin-top: 65px;
 
     &__logo {
         width: rem(160);

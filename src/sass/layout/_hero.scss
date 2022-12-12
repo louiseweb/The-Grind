@@ -35,7 +35,7 @@
 
     &__text {
         position: relative;
-        padding: rem(75) 0;
+        padding: var(--padding-mobile) 0;
         background-color: var(--grey-black);
 
         @include breakpoint(tablet) {

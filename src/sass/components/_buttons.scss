@@ -27,11 +27,12 @@
 
 .btn {
     padding: rem(10) rem(20);
+    margin-bottom: rem(15);
     font-size: 16;
     font-weight: 700;
     letter-spacing: rem(3);
     text-transform: uppercase;
-    color: var(--black);
+    color: var(--grey-black);
     background-color: var(--white);
     border: var(--black) rem(1) solid;
     border-radius: rem(50);

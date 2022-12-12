@@ -9,3 +9,14 @@
       right: 0%;
     }
   }
+
+// Slide Out
+@keyframes slideout {
+  from {
+    right: 0%;
+  }
+
+  to {
+    right: -100%;
+  }
+}

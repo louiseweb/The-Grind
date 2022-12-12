@@ -34,7 +34,7 @@
     &__info-inner {
         padding-top: var(--padding-mobile);
         padding-bottom: var(--padding-mobile);
-        margin: 0 rem(40);
+        margin: 0 rem(25);
         background-color: var(--white);
 
         @include breakpoint(desktop) {

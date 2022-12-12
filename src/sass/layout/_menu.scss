@@ -2,18 +2,22 @@
 
 .menu {
     padding: var(--padding-mobile) 0;
+    scroll-margin-top: 65px;
 
     @include breakpoint(tablet) {
         text-align: center;
     }
 
     &__body {
-        margin-bottom: rem(40);
+        margin-bottom: rem(30);
+    }
+
+    &__btns {
+        margin-bottom: rem(10);
     }
 
     &__btns .btn:not(:last-child) {
         margin-right: rem(10);
-        margin-bottom: rem(60);
     }
 
     &__grid {
@@ -49,7 +53,7 @@
     &__item {
         display: flex;
         justify-content: space-between;
-        padding: rem(30);
+        padding: rem(20);
         text-align: left;
         border: var(--mid-grey) rem(1) solid;
 

@@ -1,6 +1,7 @@
 @use '../utilities' as *;
 
 .subscribe {
+    scroll-margin-top: 65px;
 
     @include breakpoint(tablet) {
         display: flex;
@@ -55,6 +56,7 @@
 
     &__btn {
         padding: rem(15) rem(30);
+        margin-bottom: 0;
         color: var(--white);
         background-color: var(--salmon);
         border: unset;
