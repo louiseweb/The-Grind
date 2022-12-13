@@ -14,6 +14,10 @@
 
     &__btns {
         margin-bottom: rem(10);
+
+        @include breakpoint(tablet) {
+            margin-bottom: rem(30);
+        }
     }
 
     &__btns .btn:not(:last-child) {
@@ -55,7 +59,7 @@
         justify-content: space-between;
         padding: rem(20);
         text-align: left;
-        border: var(--mid-grey) rem(1) solid;
+        background-color: var(--light-grey);
 
         @include breakpoint(desktop) {
             flex-direction: row-reverse;

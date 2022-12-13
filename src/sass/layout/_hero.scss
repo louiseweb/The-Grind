@@ -43,18 +43,21 @@
             flex-direction: column;
             justify-content: center;
             width: 100%;
-            height: rem(450);
-            padding-right: rem(50);     
+            // height: rem(450);
+            padding: var(--padding-mobile) rem(50); 
         }
 
         @include breakpoint(desktop) {
             width: 75%;
+            padding-left: unset;
+            padding-top: var(--padding-desktop);
+            padding-bottom: var(--padding-desktop); 
         }
         
     }
 
     &__text::after {
-        @include breakpoint(tablet) {
+        @include breakpoint(desktop) {
             content: '';
             position: absolute;
             top: 0;
@@ -68,6 +71,7 @@
 
     &__header {
         color: var(--white);
+        margin-bottom: rem(25);
 
     }
 

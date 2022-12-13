@@ -1,7 +1,12 @@
 @use '../utilities' as *;
 
 p {
-    font-size: rem(16);
+    font-size: rem(14);
+    line-height: 1.8;
+
+    @include breakpoint(desktop) {
+        font-size: rem(16);
+    }
 }
 
 h1, h2, h3, h4 {
@@ -11,53 +16,41 @@ h1, h2, h3, h4 {
 
 h1 {
     font-weight: 300;
-    font-size: rem(40);
+    font-size: rem(35);
     margin-bottom: rem(18);
     
     @include breakpoint(tablet) {
-        font-size: rem(55);
+        font-size: rem(48);
     }
 
     @include breakpoint(desktop) {
-        font-size: rem(70);
+        font-size: rem(60);
     }
 }
 
 h2 {
     font-weight: 300;
-    font-size: rem(30);
+    font-size: rem(26);
     line-height: 1.6;
     margin-bottom: rem(5);
 
     @include breakpoint(tablet) {
-        font-size: rem(40);
+        font-size: rem(35);
     }
 
     @include breakpoint(desktop) {
-        font-size: rem(50);
+        font-size: rem(45);
     }
 }
 
 h3 {
     font-weight: 900;
-    font-size: rem(18);
-    margin-bottom: rem(10);
-
-    @include breakpoint(tablet) {
-        font-size: rem(22);
-    }
-
-    @include breakpoint(desktop) {
-        font-size: rem(24);
-    }
-}
-
-h4 {
-    font-weight: 900;
     font-size: rem(20);
+    margin-bottom: rem(10);
+    letter-spacing: rem(.5);
 
     @include breakpoint(tablet) {
-        font-size: rem(24);
+        font-size: rem(21);
     }
 
     @include breakpoint(desktop) {
@@ -65,10 +58,33 @@ h4 {
     }
 }
 
+h4 {
+    font-weight: 900;
+    font-size: rem(20);
+    letter-spacing: rem(.5);
+    margin-bottom: rem(5);
+
+    @include breakpoint(tablet) {
+        font-size: rem(21);
+    }
+
+    @include breakpoint(desktop) {
+        font-size: rem(25);
+    }
+}
+
 h5 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: rem(18);
+    font-size: rem(16);
+
+    @include breakpoint(desktop) {
+        font-size: rem(18);
+    }
+}
+
+small {
+    font-size: rem(12);
 }
 
 a,
