@@ -41,7 +41,7 @@
             display: unset;    
             width: 30vw;
             max-width: 30vw;
-            max-height: rem(1200);
+            max-height: 100%;
             margin-right: calc(-50vw + 50%);     
             object-fit: cover;
         }
@@ -49,9 +49,16 @@
         @include breakpoint(desktop) {
             width: 40vw;
             max-width: 40vw;
-            max-height: rem(1000);
+            height: auto;
+            background-color: burlywood;
         }
 
+    }
+
+    &__img-desktop img {
+        object-fit: cover;
+        height: 100%;
+        overflow: hidden;
     }
 
     &__timeline-mobile {
@@ -81,7 +88,8 @@
         @include breakpoint(desktop) {
             width: rem(1000);
             max-width: rem(1000);
-            margin-top: rem(50);   
+            margin-top: rem(50);  
+            margin-bottom: var(--margin-desktop);
         }
 
     }

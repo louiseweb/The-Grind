@@ -62,10 +62,9 @@
         background-color: var(--light-grey);
 
         @include breakpoint(desktop) {
-            flex-direction: row-reverse;
+            padding: rem(30);
         }
     }
-
 
     &__col-1 {
         max-width: rem(250);
@@ -85,18 +84,14 @@
         display: flex;
         align-items: flex-end;
         margin-left: rem(20);
-
-        @include breakpoint(desktop) {
-            height: 100%;   
-            padding: rem(10) rem(50);
-            margin-left: unset;
-            background-color: var(--grey-black);
-        }
-
     }
 
     &__img {
         max-width: rem(60);
+
+        @include breakpoint(desktop) {
+            max-width: rem(70);
+        }
     }
 
 }

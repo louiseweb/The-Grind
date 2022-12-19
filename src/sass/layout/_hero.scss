@@ -11,7 +11,7 @@
         margin-top: rem(-65);
         background-image: url('../../dist/img/image-background-desktop.jpg');
         background-repeat: no-repeat;
-        background-position: top;
+        background-position: bottom;
         background-size: cover;
     }
     
@@ -43,7 +43,6 @@
             flex-direction: column;
             justify-content: center;
             width: 100%;
-            // height: rem(450);
             padding: var(--padding-mobile) rem(50); 
         }
 
@@ -72,7 +71,6 @@
     &__header {
         color: var(--white);
         margin-bottom: rem(25);
-
     }
 
     &__socials {
