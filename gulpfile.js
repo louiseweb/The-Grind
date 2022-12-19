@@ -64,6 +64,8 @@ function watchTask() {
         );
 }
 
-exports.default = series(styles, scripts, browsersyncServe, watchTask);
-exports.build = series(styles, scripts, images);
+exports.default = series(styles, scripts, images, browsersyncServe, watchTask);
 // Add images
+
+// Build
+exports.build = series(styles, scripts, images);
